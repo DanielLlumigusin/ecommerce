@@ -1,0 +1,487 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-el-título-de-la-página",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verificar el título de la página",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Yo ingreso a la página de inicio",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3249370400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Puedo ver el título de la página",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 338899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "El título de la página debe ser \"Todos los Productos\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 353900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 127794800
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-el-título-de-un-producto-específico",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verificar el título de un Producto específico",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Puedo ver el producto con el ID \"product-1234\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 580100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "El título del producto debe ser \"Pruebas12\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 987199,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:101:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;filtrar-productos-por-categoría",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Filtrar productos por categoría",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Selecciono la categoría \"Electronics\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 306799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Solo se deben mostrar productos de la categoría \"Electronics\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1074099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1217600,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;filtrar-productos-por-precio",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Filtrar productos por precio",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Selecciono el rango de precios \"100 - 200\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 551400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Solo se deben mostrar productos con precios entre 100 y 200",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 799100,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;agregar-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Agregar producto al carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "Agrego el producto con el ID \"product-5678\" al carrito",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "El producto debe aparecer en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 279099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 996899,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-cantidad-total-de-productos",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verificar cantidad total de productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "Verifico la cantidad total de productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "La cantidad total de productos debe ser \"50\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 839100,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-la-funcionalidad-de-\"cargar-más\"-productos",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verificar la funcionalidad de \"Cargar más\" productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "Hago clic en \"Cargar más\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 208900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "Se deben cargar y mostrar más productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 160499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 515199,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-que-un-producto-tiene-imagen",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Verificar que un producto tiene imagen",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "Puedo ver el producto con el ID \"product-3456\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 104400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "El producto debe tener una imagen",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:94"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20008875899,
+              "error_message": "Error: function timed out, ensure the callback is executed within 20000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 720499,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-que-un-producto-tiene-descripción",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Verificar que un producto tiene descripción",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "Puedo ver el producto con el ID \"product-7890\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 95499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "El producto debe tener una descripción de al menos 60 caracteres",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 314899,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;resetear-filtros",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Resetear filtros",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "Yo aplico filtros de categoría y precio",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "Hago clic en el botón de \"Resetear\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "Todos los filtros deben ser removidos y mostrar todos los productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:108"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 392000,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\Proyecto_ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "productos-y-filtros",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Productos y Filtros",
+    "tags": [],
+    "uri": "features\\productosTest.feature"
+  }
+]
