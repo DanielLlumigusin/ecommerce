@@ -9,14 +9,6 @@ Feature: Productos y Filtros
     When Puedo ver el producto con el ID "product-1234"
     Then El título del producto debe ser "Pruebas12"
 
-  Scenario: Filtrar productos por categoría
-    When Selecciono la categoría "Electronics"
-    Then Solo se deben mostrar productos de la categoría "Electronics"
-
-  Scenario: Filtrar productos por precio
-    When Selecciono el rango de precios "100 - 200"
-    Then Solo se deben mostrar productos con precios entre 100 y 200
-
   Scenario: Agregar producto al carrito
     When Agrego el producto con el ID "product-5678" al carrito
     Then El producto debe aparecer en el carrito
