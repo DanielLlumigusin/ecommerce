@@ -1,0 +1,794 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "carrito-de-compras;ver-carrito-vacío",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Ver carrito vacío",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario está en la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1407300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "no hay productos en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el mensaje \"Tu carrito está vacío\" debería mostrarse",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 164600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "el total debería ser \"$0.00\"",
+            "result": {
+              "status": "ambiguous",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 457200
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "carrito-de-compras;actualizar-dirección-del-usuario",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Actualizar dirección del usuario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "el usuario está en la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 84699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "la dirección actual es \"admin\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "el usuario actualiza la dirección a \"Nueva dirección\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:47"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "la dirección actual debería ser \"Nueva dirección\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:51"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 94499
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "carrito-de-compras;completar-el-proceso-de-pago",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Completar el proceso de pago",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "el carrito contiene productos",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 118699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "el usuario hace clic en el botón \"Pagar\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:60"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 264200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "el sistema debería redirigir al proceso de pago",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:66"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 106999
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "carrito-de-compras",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Carrito de compras",
+    "tags": [],
+    "uri": "features\\carritoTest.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "agregar-producto-al-carrito;agregar-un-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Agregar un producto al carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "el usuario está en la página del carrito de compras",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 98600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "el usuario agrega un producto llamado \"Producto A\" con precio \"$10.00\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 199900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "el carrito debería mostrar el producto \"Producto A\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 228999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "el total debería ser \"$10.00\"",
+            "match": {
+              "location": "features\\step_definitions\\carritoTest_steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 417900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 222199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "agregar-producto-al-carrito",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Agregar producto al Carrito",
+    "tags": [],
+    "uri": "features\\productosCarrito..feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "productos-por-categoria;filtrar-productos-por-categoría",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Filtrar productos por categoría",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "Selecciono la categoría \"Electronics\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 178400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Solo se deben mostrar productos de la categoría \"Electronics\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 114100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2890600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "productos-por-categoria",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Productos por categoria",
+    "tags": [],
+    "uri": "features\\productosCategoria.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "productos-por-precio;filtrar-productos-por-precio",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Filtrar productos por precio",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "Selecciono el rango de precios \"100 - 200\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 250200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Solo se deben mostrar productos con precios entre 100 y 200",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 326500
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "productos-por-precio",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Productos por Precio",
+    "tags": [],
+    "uri": "features\\productosPrecio..feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-el-título-de-la-página",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verificar el título de la página",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Yo ingreso a la página de inicio",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1420498799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "Puedo ver el título de la página",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "El título de la página debe ser \"Todos los Productos\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 447400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 88397199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-el-título-de-un-producto-específico",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Verificar el título de un Producto específico",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "Puedo ver el producto con el ID \"product-1234\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "El título del producto debe ser \"Pruebas12\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 760299,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:101:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;agregar-producto-al-carrito",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Agregar producto al carrito",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Agrego el producto con el ID \"product-5678\" al carrito",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 773200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "El producto debe aparecer en el carrito",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 462399
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 424899,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-cantidad-total-de-productos",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Verificar cantidad total de productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Verifico la cantidad total de productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "La cantidad total de productos debe ser \"50\"",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 233799,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-la-funcionalidad-de-\"cargar-más\"-productos",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Verificar la funcionalidad de \"Cargar más\" productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "Hago clic en \"Cargar más\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Se deben cargar y mostrar más productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 73100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 241799,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-que-un-producto-tiene-imagen",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Verificar que un producto tiene imagen",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "Puedo ver el producto con el ID \"product-3456\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "El producto debe tener una imagen",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:94"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 20009131499,
+              "error_message": "Error: function timed out, ensure the callback is executed within 20000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 1108000,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;verificar-que-un-producto-tiene-descripción",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Verificar que un producto tiene descripción",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "Puedo ver el producto con el ID \"product-7890\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 422400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "El producto debe tener una descripción de al menos 60 caracteres",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:99"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 324000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 612699,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "productos-y-filtros;resetear-filtros",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Resetear filtros",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "Yo aplico filtros de categoría y precio",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "Hago clic en el botón de \"Resetear\"",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:104"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "Todos los filtros deben ser removidos y mostrar todos los productos",
+            "match": {
+              "location": "features\\step_definitions\\productosTest_steps.js:108"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 713400,
+              "error_message": "NoSuchSessionError: This driver instance does not have a valid session ID (did you call WebDriver.quit()?) and may no longer be used.\n    at C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\webdriver.js:775:9\n    at Object.thenFinally [as finally] (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\node_modules\\selenium-webdriver\\lib\\promise.js:103:11)\n    at async quitDriver (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:15:9)\n    at async World.<anonymous> (C:\\Users\\Owner\\Documents\\GitHub\\ecommerce\\client\\test\\features\\step_definitions\\productosTest_steps.js:114:5)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "productos-y-filtros",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Productos y Filtros",
+    "tags": [],
+    "uri": "features\\productosTest.feature"
+  }
+]
